@@ -1,0 +1,51 @@
+
+.first_Section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/black-geometric.jpg");
+  background-size: 100% auto;
+  color: $color_White;
+  > * {
+    margin: 1em;
+  }
+  a {
+    text-decoration: none;
+    color: $color_White;
+  }
+  .nav-pills {
+    background-color: $color_Green;
+    padding: .75em;
+    border-radius: .5em;
+  }
+}
+
+.company_Brief {
+  color: $color_Black;
+  background-color: $color_White;
+  > section {
+    margin: 1em;
+  }
+  h2 {
+    text-align: center;
+
+  }
+}
+
+// TODO: get the cat box centered
+.team_Class {
+  h3 {
+    text-align: center;
+  }
+  section {
+    display: flex;
+    flex-flow: row wrap;
+    // align-items: center;
+    width: 90%;
+    // margin: auto;
+    img {
+      margin: .2em;
+    }
+  }
+}

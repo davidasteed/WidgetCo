@@ -14,7 +14,34 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("images/fractal-background.jpg");
+  background-image: url("images/black-geometric.jpg");
+  background-size: 100% auto;
   color: #ffffff; }
+  .first_Section > * {
+    margin: 1em; }
+  .first_Section a {
+    text-decoration: none;
+    color: #ffffff; }
+  .first_Section .nav-pills {
+    background-color: #5cb85c;
+    padding: .75em;
+    border-radius: .5em; }
+
+.company_Brief {
+  color: #000000;
+  background-color: #ffffff; }
+  .company_Brief > section {
+    margin: 1em; }
+  .company_Brief h2 {
+    text-align: center; }
+
+.team_Class h3 {
+  text-align: center; }
+.team_Class section {
+  display: flex;
+  flex-flow: row wrap;
+  width: 90%; }
+  .team_Class section img {
+    margin: .2em; }
 
 /*# sourceMappingURL=styles.css.map */
