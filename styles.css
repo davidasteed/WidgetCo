@@ -1,3 +1,20 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: #000000;
+  color: #ffffff; }
+  header h1 {
+    padding-bottom: .5em; }
+  header a {
+    color: #ffffff; }
 
+.first_Section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/fractal-background.jpg");
+  color: #ffffff; }
 
 /*# sourceMappingURL=styles.css.map */
