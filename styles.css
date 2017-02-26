@@ -36,8 +36,7 @@ header {
     text-align: center; }
   .company_Brief h3 {
     text-align: center; }
-  .company_Brief a {
-    display: block;
+  .company_Brief .goto {
     text-align: right;
     margin-right: 1em; }
 
@@ -64,15 +63,38 @@ header {
   .item_Showcase .emphasis_p {
     text-align: center;
     font-weight: bold; }
+  .item_Showcase nav {
+    display: flex;
+    margin: 2em; }
+  .item_Showcase .pagination {
+    margin: auto; }
 
 .icon_Set {
-  margin: auto;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 1em auto;
   display: flex;
   justify-content: space-around;
   width: 90%; }
+  .icon_Set li {
+    position: relative;
+    padding-right: 1em; }
   .icon_Set a {
     box-sizing: border-box;
     text-decoration: none;
     font-size: 3em; }
+  .icon_Set .nav-pills {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #337ab7;
+    text-align: center;
+    border-radius: 40%;
+    color: #ffffff;
+    font-size: 1em;
+    width: 50%; }
+
+.toolbar_Group a {
+  display: block; }
 
 /*# sourceMappingURL=styles.css.map */
