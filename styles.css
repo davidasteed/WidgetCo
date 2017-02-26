@@ -34,14 +34,45 @@ header {
     margin: 1em; }
   .company_Brief h2 {
     text-align: center; }
+  .company_Brief h3 {
+    text-align: center; }
+  .company_Brief a {
+    display: block;
+    text-align: right;
+    margin-right: 1em; }
 
-.team_Class h3 {
-  text-align: center; }
 .team_Class section {
+  margin: auto;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
   width: 90%; }
   .team_Class section img {
     margin: .2em; }
+
+.item_Showcase {
+  background-color: #d9edf7;
+  margin: 1em; }
+  .item_Showcase a {
+    display: block;
+    text-align: right; }
+  .item_Showcase h2 {
+    margin: 1em;
+    text-align: center; }
+  .item_Showcase p {
+    margin: 1em; }
+  .item_Showcase .emphasis_p {
+    text-align: center;
+    font-weight: bold; }
+
+.icon_Set {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  width: 90%; }
+  .icon_Set a {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 3em; }
 
 /*# sourceMappingURL=styles.css.map */

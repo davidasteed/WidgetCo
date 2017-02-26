@@ -31,21 +31,58 @@
     text-align: center;
 
   }
-}
-
-// TODO: get the cat box centered
-.team_Class {
   h3 {
     text-align: center;
   }
+  a {
+    display: block;
+    text-align: right;
+    margin-right: 1em;
+  }
+}
+
+.team_Class {
   section {
+    margin: auto;
     display: flex;
     flex-flow: row wrap;
-    // align-items: center;
+    justify-content: space-around;
     width: 90%;
-    // margin: auto;
     img {
       margin: .2em;
     }
+  }
+}
+
+.item_Showcase {
+  background-color: $color_PaleBlue;
+  margin: 1em;
+  a {
+    display: block;
+    text-align: right;
+  }
+  h2 {
+    margin: 1em;
+    text-align: center;
+  }
+  p {
+    margin: 1em;
+  }
+  .emphasis_p {
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+.icon_Set {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+  a {
+    box-sizing: border-box;
+    text-decoration: none;
+    // display: block;
+    font-size: 3em;
   }
 }
