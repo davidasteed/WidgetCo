@@ -1,4 +1,3 @@
-
 .first_Section {
   display: flex;
   flex-direction: column;
@@ -38,6 +37,9 @@
   .goto {
     text-align: right;
     margin-right: 1em;
+    a {
+      text-decoration: none;
+    }
   }
 }
 
@@ -79,6 +81,14 @@
   .pagination {
     margin: auto;
   }
+  .goto {
+    text-align: right;
+    margin-right: 1em;
+    a {
+      display: inline;
+      text-decoration: none;
+    }
+  }
 }
 
 .icon_Set {
@@ -114,4 +124,81 @@
   a{
     display: block;
   }
+}
+
+.place_Order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $color_PaleOrange;
+  fieldset {
+    width: 90%;
+    background-color: $color_White;
+    border: .1em solid $color_SkyBlue;
+    box-sizing: border-box;
+    margin: 1em;
+
+    * {
+      margin-left: .5em;
+    }
+    aside {
+      margin-bottom: 1em;
+    }
+    label {
+      display: block;
+    }
+    .inline_Label {
+      display: inline;
+    }
+    select {
+      width: 96%;
+    }
+
+    select, input {
+      outline: 1px solid $color_LightGrey;
+    }
+
+    .theme_SideBySide {
+      display: flex;
+      align-items: center;
+      input {
+        padding-top: 2em;
+        outline: none;
+      }
+    }
+    legend {
+      background-color: $color_SkyBlue;
+      color: $color_White;
+      text-align: center;
+    }
+  }
+  .your_Info {
+    input {
+      margin-bottom: 1em;
+    }
+  }
+  .nav-pills {
+    background-color: $color_Green;
+    padding: .75em;
+    border-radius: .5em;
+    text-decoration: none;
+    color: $color_White;
+  }
+  .goto {
+    align-self: flex-end;
+    text-align: right;
+    margin-right: 1em;
+    a {
+      display: inline;
+      text-decoration: none;
+    }
+  }
+}
+
+footer {
+  background-color: $color_Black;
+  color: $color_White;
+  box-sizing: border-box;
+  padding: 1em;
 }

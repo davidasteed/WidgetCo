@@ -14,7 +14,7 @@
     </header>
 
     <article>
-      <section class="first_Section">
+      <section class="first_Section" id="first_Section">
         <h2>The Best Widgets</h2>
         <p>We have the best widgets.  They're amazing.  You'll love them.</p>
         <a href="#place_Order" class="nav nav-pills">Place Your Order Now!</a>
@@ -36,8 +36,8 @@
             <img src="images/cat6.jpeg" alt="cat image six">
           </section>
           <aside class="goto">
-            <a class="href_Symbol glyphicon glyphicon-chevron-up"></a>
-            <a>go to top</a>
+            <a href="#first_Section" class="href_Symbol glyphicon glyphicon-chevron-up"></a>
+            <a href="#first_Section">go to top</a>
           </aside>
         </section>
 
@@ -71,78 +71,104 @@
           </li>
         </ul>
 
-          <nav aria-label="Page navigation">
-            <ul class="pagination">
-              <li>
-                <a href="#" aria-label="Previous">
-                  <span aria-hidden="true">&laquo;</span>
-                </a>
-              </li>
-              <li><a href="#">1</a></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li>
-                <a href="#" aria-label="Next">
-                  <span aria-hidden="true">&raquo;</span>
-                </a>
-              </li>
-            </ul>
+        <nav aria-label="Page navigation">
+          <ul class="pagination">
+            <li>
+              <a href="#" aria-label="Previous">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5</a></li>
+            <li>
+              <a href="#" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
         </nav>
 
-        <a>go to top</a>
+        <aside class="goto">
+          <a href="#first_Section" class="href_Symbol glyphicon glyphicon-chevron-up"></a>
+          <a href="#first_Section">go to top</a>
+        </aside>
       </section>
 
-      <section id="place_Order">
+      <section class="place_Order">
         <h2>Place Your Order</h2>
+
         <fieldset>
           <legend>Item Details</legend>
           <aside>
             <label type="select" for="widget_items">Item Type</label>
             <select name="widget_items">
-              <option value="none selected">select color</option>
               <option value="Huge Widget">Huge Widget</option>
               <option value="Big Widget">Big Widget</option>
               <option value="Small Widget">Small Widget</option>
               <option value="Tiny Widget">Tiny Widget</option>
             </select>
           </aside>
+          <aside>
+            <label for="quantity" class="inline_Label">Quantity</label>
+            <input type="number" name="quantity" id="quantity" min="0">
+
+            <!-- <label for="levitate">How many objects can you levitate at once?</label>
+            <input class="levitate" type="number" name="levitate" min="0"> -->
+
+          </aside>
+          <aside class="theme_SideBySide">
+            <h4>Gift Wrap?</h4>
+            <label>
+              <input type="radio" name="Gift Wrap" value="No">
+              No
+            </label>
+            <label>
+              <input type="radio" name="Gift Wrap" value="Yes">
+              Yes
+            </label>
+          </aside>
         </fieldset>
 
-        <fieldset>
+        <fieldset class="your_Info">
           <legend>Your Info</legend>
           <aside>
             <label for="fullname_Input">Full Name</label>
-            <input class="full_Width" type="text" name="fullname_Input" id="fullname_Input">
+            <input class="full_Width" size="65" type="text" name="fullname_Input" id="fullname_Input">
           </aside>
 
           <aside>
             <label for="email" value="email">Email</label>
-            <input type="email" id="email" name="email">
+            <input size="65" type="email" id="email" name="email">
           </aside>
 
           <aside>
             <label for="credit_card">Credit Card</label>
-            <input type="text" id="credit_card" name="credit_card">
+            <input size="65" type="text" id="credit_card" name="credit_card">
           </aside>
 
           <aside>
             <label for="expire_date">Expiration</label>
-            <input type="date" name="expire_date" id="expire_date">
+            <input size="65" type="text" id="expire_date" name="expire_date">
           </aside>
-
         </fieldset>
 
-        <button>Confirm Order</button>
 
-        <a>go to top</a>
+        <a href="" class="nav nav-pills">Confirm Order</a>
+
+        <aside class="goto">
+          <a href="#first_Section" class="href_Symbol glyphicon glyphicon-chevron-up"></a>
+          <a href="#first_Section">go to top</a>
+        </aside>
+
       </section>
+
 
       <footer>
         <h5>&copy;2017 The Iron Yard Students</h5>
       </footer>
     </article>
-
   </body>
 </html>
