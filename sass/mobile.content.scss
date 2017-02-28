@@ -131,24 +131,28 @@
   margin: auto;
   background-color: $color_PaleOrange;
   border-radius: 3px;
-  h2 {
+  display: flex;
+  flex-direction: column;
+
+  h2, h4 {
     text-align: center;
     padding-top: 1em;
     padding-bottom: 1em;
+    margin-top: 0;
 
   }
   .panel-default {
     display: flex;
     flex-direction: column;
     width: 96%;
-    margin: auto;
+    margin: 1em auto;
     background-color: $color_White;
+    border-radius: 3px;
     .panel-heading {
       background-color: $color_SkyBlue;
       color: $color_White;
       text-align: center;
       width: 100%;
-      margin-top: 0;
     }
     .form-horizontal {
       width: 96%;
@@ -157,10 +161,22 @@
       flex-flow: column wrap;
       .flex_Form_Group {
         display: flex;
+      .radio_Styling {
+        padding-left: 0;
       }
+      input[type=number] {
+        width: 3em;
+      }
+      }
+    .email_Styling {
+      width: 100%;
+      outline: .2em solid $color_LightGrey;
+    }
+    }
+    select, .input_Styling {
+      outline: .1em solid $color_LightGrey;
     }
   }
-
   .nav-pills {
     background-color: $color_Green;
     padding: .75em;

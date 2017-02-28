@@ -109,23 +109,26 @@ header {
   width: 96%;
   margin: auto;
   background-color: #ffddcc;
-  border-radius: 3px; }
-  .place_Order h2 {
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column; }
+  .place_Order h2, .place_Order h4 {
     text-align: center;
     padding-top: 1em;
-    padding-bottom: 1em; }
+    padding-bottom: 1em;
+    margin-top: 0; }
   .place_Order .panel-default {
     display: flex;
     flex-direction: column;
     width: 96%;
-    margin: auto;
-    background-color: #ffffff; }
+    margin: 1em auto;
+    background-color: #ffffff;
+    border-radius: 3px; }
     .place_Order .panel-default .panel-heading {
       background-color: #337ab7;
       color: #ffffff;
       text-align: center;
-      width: 100%;
-      margin-top: 0; }
+      width: 100%; }
     .place_Order .panel-default .form-horizontal {
       width: 96%;
       margin: auto;
@@ -133,6 +136,15 @@ header {
       flex-flow: column wrap; }
       .place_Order .panel-default .form-horizontal .flex_Form_Group {
         display: flex; }
+        .place_Order .panel-default .form-horizontal .flex_Form_Group .radio_Styling {
+          padding-left: 0; }
+        .place_Order .panel-default .form-horizontal .flex_Form_Group input[type=number] {
+          width: 3em; }
+      .place_Order .panel-default .form-horizontal .email_Styling {
+        width: 100%;
+        outline: 0.2em solid #d3d3d3; }
+    .place_Order .panel-default select, .place_Order .panel-default .input_Styling {
+      outline: 0.1em solid #d3d3d3; }
   .place_Order .nav-pills {
     background-color: #5cb85c;
     padding: .75em;
