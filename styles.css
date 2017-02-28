@@ -106,47 +106,40 @@ header {
   display: block; }
 
 .place_Order {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #ffddcc; }
-  .place_Order fieldset {
-    width: 90%;
-    background-color: #ffffff;
-    border: 0.1em solid #337ab7;
-    box-sizing: border-box;
-    margin: 1em; }
-    .place_Order fieldset * {
-      margin-left: .5em; }
-    .place_Order fieldset aside {
-      margin-bottom: 1em; }
-    .place_Order fieldset label {
-      display: block; }
-    .place_Order fieldset .inline_Label {
-      display: inline; }
-    .place_Order fieldset select {
-      width: 96%; }
-    .place_Order fieldset select, .place_Order fieldset input {
-      outline: 1px solid #d3d3d3; }
-    .place_Order fieldset .theme_SideBySide {
-      display: flex;
-      align-items: center; }
-      .place_Order fieldset .theme_SideBySide input {
-        padding-top: 2em;
-        outline: none; }
-    .place_Order fieldset legend {
+  width: 96%;
+  margin: auto;
+  background-color: #ffddcc;
+  border-radius: 3px; }
+  .place_Order h2 {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em; }
+  .place_Order .panel-default {
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    margin: auto;
+    background-color: #ffffff; }
+    .place_Order .panel-default .panel-heading {
       background-color: #337ab7;
       color: #ffffff;
-      text-align: center; }
-  .place_Order .your_Info input {
-    margin-bottom: 1em; }
+      text-align: center;
+      width: 100%;
+      margin-top: 0; }
+    .place_Order .panel-default .form-horizontal {
+      width: 96%;
+      margin: auto;
+      display: flex;
+      flex-flow: column wrap; }
+      .place_Order .panel-default .form-horizontal .flex_Form_Group {
+        display: flex; }
   .place_Order .nav-pills {
     background-color: #5cb85c;
     padding: .75em;
     border-radius: .5em;
     text-decoration: none;
-    color: #ffffff; }
+    color: #ffffff;
+    align-self: center; }
   .place_Order .goto {
     align-self: flex-end;
     text-align: right;
@@ -154,6 +147,9 @@ header {
     .place_Order .goto a {
       display: inline;
       text-decoration: none; }
+
+.form-control, .form-control-static {
+  display: inline-block; }
 
 footer {
   background-color: #000000;

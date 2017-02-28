@@ -99,71 +99,56 @@
 
       <section class="place_Order">
         <h2>Place Your Order</h2>
+        <section class="panel-default">
+          <h2 class="panel-heading">Item Details</h2>
+          <section class="form-horizontal">
+            <section class="form-group">
+              <label for="select_Widget" class="col-sm-2 control-label">Item Type</label>
+              <section class="col-sm-10">
+                <select id="select_Widget" type="select" class="form-control">
+                  <option value="Awesome Widget">Awesome Widget</option>
+                  <option value="Huge Widget">Huge Widget</option>
+                  <option value="Big Widget">Big Widget</option>
+                  <option value="Small Widget">Small Widget</option>
+                  <option value="Tiny Widget">Tiny Widget</option>
+                </select>
+              </section>
+            </section>
+          </section>
 
-        <fieldset>
-          <legend>Item Details</legend>
-          <aside>
-            <label type="select" for="widget_items">Item Type</label>
-            <select name="widget_items">
-              <option value="Huge Widget">Huge Widget</option>
-              <option value="Big Widget">Big Widget</option>
-              <option value="Small Widget">Small Widget</option>
-              <option value="Tiny Widget">Tiny Widget</option>
-            </select>
+          <section class="form-horizontal">
+            <section class="form-group flex_Form_Group">
+              <label for="quantity" class="col-sm-2 control-label">Quantity</label>
+              <section class="col-sm-10">
+                <input type="number" name="quantity" id="quantity" min="0">
+              </section>
+            </section>
+          </section>
+
+          <section class="form-horizontal">
+            <section class="form-group flex_Form_Group">
+              <label for="gift_Wrap" class="col-sm-2 control-label">Gift Wrap?</label>
+              <section class="col-sm-10">
+                <section>
+                  <input type="radio" name="Gift Wrap" value="No">
+                  No
+                  <input type="radio" name="Gift Wrap" value="Yes">
+                  Yes
+                </section>
+              </section>
+            </section>
+          </section>
+
+          <a href="" class="nav nav-pills">Confirm Order</a>
+
+          <aside class="goto">
+            <a href="#first_Section" class="href_Symbol glyphicon glyphicon-chevron-up"></a>
+            <a href="#first_Section">go to top</a>
           </aside>
-          <aside>
-            <label for="quantity" class="inline_Label">Quantity</label>
-            <input type="number" name="quantity" id="quantity" min="0">
-
-            <!-- <label for="levitate">How many objects can you levitate at once?</label>
-            <input class="levitate" type="number" name="levitate" min="0"> -->
-
-          </aside>
-          <aside class="theme_SideBySide">
-            <h4>Gift Wrap?</h4>
-            <label>
-              <input type="radio" name="Gift Wrap" value="No">
-              No
-            </label>
-            <label>
-              <input type="radio" name="Gift Wrap" value="Yes">
-              Yes
-            </label>
-          </aside>
-        </fieldset>
-
-        <fieldset class="your_Info">
-          <legend>Your Info</legend>
-          <aside>
-            <label for="fullname_Input">Full Name</label>
-            <input class="full_Width" size="65" type="text" name="fullname_Input" id="fullname_Input">
-          </aside>
-
-          <aside>
-            <label for="email" value="email">Email</label>
-            <input size="65" type="email" id="email" name="email">
-          </aside>
-
-          <aside>
-            <label for="credit_card">Credit Card</label>
-            <input size="65" type="text" id="credit_card" name="credit_card">
-          </aside>
-
-          <aside>
-            <label for="expire_date">Expiration</label>
-            <input size="65" type="text" id="expire_date" name="expire_date">
-          </aside>
-        </fieldset>
-
-
-        <a href="" class="nav nav-pills">Confirm Order</a>
-
-        <aside class="goto">
-          <a href="#first_Section" class="href_Symbol glyphicon glyphicon-chevron-up"></a>
-          <a href="#first_Section">go to top</a>
-        </aside>
-
+        </section>
       </section>
+
+
 
 
       <footer>

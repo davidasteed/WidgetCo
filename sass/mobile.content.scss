@@ -127,63 +127,47 @@
 }
 
 .place_Order {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: 96%;
+  margin: auto;
   background-color: $color_PaleOrange;
-  fieldset {
-    width: 90%;
+  border-radius: 3px;
+  h2 {
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+
+  }
+  .panel-default {
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    margin: auto;
     background-color: $color_White;
-    border: .1em solid $color_SkyBlue;
-    box-sizing: border-box;
-    margin: 1em;
-
-    * {
-      margin-left: .5em;
-    }
-    aside {
-      margin-bottom: 1em;
-    }
-    label {
-      display: block;
-    }
-    .inline_Label {
-      display: inline;
-    }
-    select {
-      width: 96%;
-    }
-
-    select, input {
-      outline: 1px solid $color_LightGrey;
-    }
-
-    .theme_SideBySide {
-      display: flex;
-      align-items: center;
-      input {
-        padding-top: 2em;
-        outline: none;
-      }
-    }
-    legend {
+    .panel-heading {
       background-color: $color_SkyBlue;
       color: $color_White;
       text-align: center;
+      width: 100%;
+      margin-top: 0;
+    }
+    .form-horizontal {
+      width: 96%;
+      margin: auto;
+      display: flex;
+      flex-flow: column wrap;
+      .flex_Form_Group {
+        display: flex;
+      }
     }
   }
-  .your_Info {
-    input {
-      margin-bottom: 1em;
-    }
-  }
+
   .nav-pills {
     background-color: $color_Green;
     padding: .75em;
     border-radius: .5em;
     text-decoration: none;
     color: $color_White;
+    align-self: center;
   }
   .goto {
     align-self: flex-end;
@@ -195,6 +179,11 @@
     }
   }
 }
+
+.form-control, .form-control-static {
+  display: inline-block;
+}
+
 
 footer {
   background-color: $color_Black;
