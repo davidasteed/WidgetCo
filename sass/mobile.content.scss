@@ -6,12 +6,19 @@
   background-image: url("images/black-geometric.jpg");
   background-size: 100% auto;
   color: $color_White;
-  > * {
-    margin: 1em;
+  h2 {
+    margin-top: 1.5em;
+  }
+  p {
+    width: 90%;
+    font-size: 1.5em;
+    font-weight: lighter;
+    text-align: center;
   }
   a {
     text-decoration: none;
     color: $color_White;
+    margin-bottom: 4em;
   }
   .nav-pills {
     background-color: $color_Green;
@@ -34,12 +41,11 @@
     text-align: center;
   }
 
-  .goto {
+  a {
     text-align: right;
     margin-right: 1em;
-    a {
-      text-decoration: none;
-    }
+    display: block;
+    text-decoration: underline;
   }
 }
 
@@ -81,13 +87,8 @@
   .pagination {
     margin: auto;
   }
-  .goto {
-    text-align: right;
-    margin-right: 1em;
-    a {
-      display: inline;
-      text-decoration: none;
-    }
+  a {
+    text-decoration: underline;
   }
 }
 
@@ -106,6 +107,9 @@
     box-sizing: border-box;
     text-decoration: none;
     font-size: 3em;
+  }
+  .glyphicon {
+    color: $color_Black;
   }
   .nav-pills {
     position: absolute;
@@ -185,14 +189,11 @@
     color: $color_White;
     align-self: center;
   }
-  .goto {
-    align-self: flex-end;
+  a {
     text-align: right;
     margin-right: 1em;
-    a {
-      display: inline;
-      text-decoration: none;
-    }
+    display: block;
+    text-decoration: underline;
   }
 }
 
